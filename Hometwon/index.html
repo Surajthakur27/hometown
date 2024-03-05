@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A home town Page </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#333;
+        }
+        header {
+            background: rgb(136,76,128);
+            background: linear-gradient(90deg, rgba(136,76,128,0.908000700280112) 75%, rgba(2,0,36,0.7357317927170868) 100%) !important;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: black;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+        }
+        .grid-item {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .image-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 60%;
+        }
+        .image-container img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        @media screen and (max-width: 800px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Bihar - My home town </h1>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            <div class="grid-item">
+                <div class="image-container">
+                    <img src="buddha.jpg" alt="Bihar City">
+                </div>
+            </div>
+            <div class="grid-item">
+                <h2>About Bihar</h2>
+                <p>Bihar, a state in eastern India, is rich in history and cultural heritage. It is home to ancient sites, religious landmarks, and vibrant festivals.</p>
+            </div>
+            <div class="grid-item">
+                <h2>Main Attractions</h2>
+                <ul>
+                    <li>Mahabodhi Temple, Bodh Gaya</li>
+                    <li>Nalanda University</li>
+                    <li>Vikramshila Ruins</li>
+                    <li>Patna Sahib Gurudwara</li>
+                    <li>Valmiki National Park</li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h2>Local Cuisine</h2>
+                <p>Bihari cuisine is known for its simplicity and delicious flavors. Must-try dishes include Litti Chokha, Sattu Paratha, and Chana Ghugni.</p>
+            </div>
+            <div class="grid-item">
+                <h2>Culture and Festivals</h2>
+                <p>Bihar celebrates various festivals with great fervor, including Chhath Puja, Sonepur Mela, and Rajgir Mahotsav.</p>
+            </div>
+            <div class="grid-item">
+                <h2>How to Reach</h2>
+                <p>Bihar can be accessed by air through Patna Airport, by train via major railway stations like Patna Junction, and by road through national highways.</p>
+            </div>
+            <div class="grid-item">
+                <h2>Adventure Tourism</h2>
+                <p>Adventure enthusiasts can enjoy activities like white-water rafting in the Ganges, trekking in the Rajgir hills, and wildlife safaris in Valmiki National Park.</p>
+            </div>
+            <div class="grid-item">
+                <h2>Wildlife</h2>
+                <p>Bihar is blessed with diverse wildlife, including Bengal tigers, elephants, deer, and various bird species, found in its national parks and sanctuaries.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
